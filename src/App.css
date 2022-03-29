@@ -1,0 +1,48 @@
+.logn-card {
+  @apply bg-white md:rounded-lg shadow-lg absolute overflow-hidden
+  md:top-1/2 md:left-1/2 top-0 left-0 md:w-[48rem] md:h-[30rem] h-full w-full
+}
+
+.transparency-btn {
+  @apply font-semibold px-6 py-3 rounded-2xl border border-white hover:scale-110 transition-all
+}
+
+.slide-container {
+  @apply h-1/2 w-full md:w-1/2 md:h-full overflow-hidden duration-700
+  transition-transform absolute
+}
+
+.form {
+  @apply absolute h-full w-full flex flex-col items-center justify-center bg-white
+}
+
+.slide-box-container {
+  @apply flex text-white md:flex-row flex-col text-sm justify-between md:h-full md:w-2/1
+  md:bg-gradient-to-r bg-gradient-to-b from-[#F5030F] to-[#6d28d9] h-2/1 w-full relative
+  transition-transform md:-left-100% md:top-0 -top-100% duration-700
+}
+
+.slide-box {
+  @apply flex flex-col items-center justify-center md:w-1/2 md:h-full
+  h-1/2 w-full transition-transform duration-700
+}
+
+.logn-h1 {
+  @apply text-3xl font-extrabold
+}
+
+.logn-show {
+  opacity: 1;
+  animation: show 0.7s;
+}
+
+@keyframes show {
+  0%,
+  49.99% {
+    opacity: 0;
+  }
+  50%,
+  100% {
+    opacity: 1;
+  }
+}
