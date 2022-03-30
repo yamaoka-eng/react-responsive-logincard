@@ -4,7 +4,12 @@
 }
 
 .transparency-btn {
-  @apply font-semibold px-6 py-3 rounded-2xl border border-white hover:scale-110 transition-all
+  @apply font-semibold px-8 py-3 rounded-2xl border border-white hover:scale-110 transition-all
+}
+
+.form-btn {
+  @apply bg-red-500 px-8 py-3 rounded-2xl text-white 
+  hover:scale-110 transition-all cursor-pointer
 }
 
 .slide-container {
@@ -12,8 +17,12 @@
   transition-transform absolute
 }
 
-.form {
-  @apply absolute h-full w-full flex flex-col items-center justify-center bg-white
+.slide-container-form {
+  @apply absolute h-full w-full flex flex-col items-center justify-between bg-white px-10 md:py-20 py-12
+}
+
+.slide-ct-form-input {
+  @apply bg-slate-200 border-0 px-4 py-3 w-full outline-black
 }
 
 .slide-box-container {
@@ -33,16 +42,18 @@
 
 .logn-show {
   opacity: 1;
-  animation: show 0.7s;
+  animation: show 0.25;
 }
 
 @keyframes show {
   0%,
   49.99% {
     opacity: 0;
+    z-index: 0;
   }
   50%,
   100% {
     opacity: 1;
+    z-index: 11;
   }
 }
